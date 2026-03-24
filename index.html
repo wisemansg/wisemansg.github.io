@@ -518,19 +518,23 @@
 </div>
 
 <!-- Project 14 -->
-<div class="project-card">
-    <img src="MR Cover Page.jpeg" alt="Project Fourteen Preview">
-    <div class="project-card-content">
-        <h3>Movie Recommendation System</h3>
-        <p style="text-align: justify;">
-            This project is a content-based movie recommendation system that uses machine learning and NLP to suggest similar movies based on genres and plot descriptions. It leverages Python, Pandas, NumPy, Scikit-Learn, feature vectorization, cosine similarity, and text-based machine learning models to generate recommendations.
-        </p>
-        <div class="project-buttons">
-            <a href="https://github.com/wisemansg/movierecommendationsystem" target="_blank" class="btn">Documentation</a>
-            <a href="https://colab.research.google.com/drive/1UCTVboPzxS5MA_NmNQ6XR_q1DdAsNkJP?usp=sharing" target="_blank" class="btn btn-secondary">View on Google Colab</a>
+<section id="project-14" class="section">
+    <div class="container">
+        <div class="project-card">
+            <img src="MR Cover Page.jpeg" alt="Project Fourteen Preview">
+            <div class="project-card-content">
+                <h3>Movie Recommendation System</h3>
+                <p style="text-align: justify;">
+                    This project is a content-based movie recommendation system that uses machine learning and NLP to suggest similar movies based on genres and plot descriptions. It leverages Python, Pandas, NumPy, Scikit-Learn, feature vectorization, cosine similarity, and text-based machine learning models to generate recommendations.
+                </p>
+                <div class="project-buttons">
+                    <a href="https://github.com/wisemansg/movierecommendationsystem" target="_blank" class="btn">Documentation</a>
+                    <a href="https://colab.research.google.com/drive/1UCTVboPzxS5MA_NmNQ6XR_q1DdAsNkJP?usp=sharing" target="_blank" class="btn btn-secondary">View on Google Colab</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- AWARDS SECTION -->
 <section id="awards" class="section">
@@ -647,7 +651,7 @@
 .word-table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 12px;
+    border-spacing: 0 12px; /* adds blank line between rows */
     font-size: 15px;
 }
 
@@ -659,9 +663,9 @@
 
 .word-table .col-heading {
     font-weight: 700;
-    white-space: nowrap;
-    min-width: 300px;
-    width: 30%;
+    white-space: nowrap;       /* prevents wrapping */
+    min-width: 300px;          /* ensures long headings fit */
+    width: 30%;                /* gives proper horizontal space */
 }
 </style>
 
@@ -670,9 +674,11 @@
     <div class="container">
         <h2>Send me a message</h2>
         
+    <!--UPDATE: Go to formsubmit.co and replace the email with your own-->
     <form action="https://formsubmit.co/wisemansirirog@gmail.com" method="POST" class="contact-form">
         <p> Interested in collaborating or have questions about my work? I'd love to hear from you!</p>
 
+        <!-- Form Fields -->
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="Your name" required>
@@ -689,10 +695,31 @@
             <label for="message">Message</label>
             <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
         </div>
+        
+        <!-- Submit Button -->
         <button type="submit" class="btn">Send Message</button>
+
     </form>
-</div>
-</section>
+</div></section>
+
+<style>
+.section {
+    padding: 80px 0;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+}
+</style>
 
 <!-- FOOTER -->
 <footer>
