@@ -538,21 +538,21 @@
         <h2>Honours & Awards</h2>
 
         <ul class="awards-list">
-            <li><span class="award-icon">🏆</span> Best Student of the Year – Ordinary Level</li>
-            <li><span class="award-icon">🏆</span> Best Student of the Year – Advanced Level</li>
-            <li><span class="award-icon">🏆</span> Presbyterian Education Trust Bursary</li>
-            <li><span class="award-icon">🏆</span> Beijing Government Scholarship</li>
-            <li><span class="award-icon">🏆</span> Your Big Year Global Citizens Challenge Award</li>
-            <li><span class="award-icon">🏆</span> Trustee International Scholarship, Wabash College, USA</li>
-            <li><span class="award-icon">🏆</span> National Academic Quiz Tournament and Quiz Master Award</li>
-            <li><span class="award-icon">🏆</span> Zhejiang SDG Global Summer School Scholarship, China</li>
-            <li><span class="award-icon">🏆</span> Shanghai Government Scholarship, Donghua University, China</li>
-            <li><span class="award-icon">🏆</span> UEA Postgraduate Sub-Saharan Africa Award, University of East Anglia, UK</li>
-            <li><span class="award-icon">🏆</span> Global Youth Adaptation Summit Award</li>
-            <li><span class="award-icon">🏆</span> Point Foundation BIPOC Scholarship</li>
-            <li><span class="award-icon">🏆</span> Chinese Government Scholarship, Chongqing University of Posts and Telecommunications, China</li>
-            <li><span class="award-icon">🏆</span> European Erasmus Mundus Scholarship (meta4.0), EU – France, Italy, Slovenia, Germany, and Norway</li>
-            <li><span class="award-icon">🏆</span> Youth Leadership Award, UNESCO Global Citizenship Education Development (GCED)</li>
+            <li>🏆 Best Student of the Year – Ordinary Level</li>
+            <li>🏆 Best Student of the Year – Advanced Level</li>
+            <li>🏆 Presbyterian Education Trust Bursary</li>
+            <li>🏆 Beijing Government Scholarship</li>
+            <li>🏆 Your Big Year Global Citizens Challenge Award</li>
+            <li>🏆 Trustee International Scholarship, Wabash College, USA</li>
+            <li>🏆 National Academic Quiz Tournament and Quiz Master Award</li>
+            <li>🏆 Zhejiang SDG Global Summer School Scholarship, China</li>
+            <li>🏆 Shanghai Government Scholarship, Donghua University, China</li>
+            <li>🏆 UEA Postgraduate Sub-Saharan Africa Award, University of East Anglia, UK</li>
+            <li>🏆 Global Youth Adaptation Summit Award</li>
+            <li>🏆 Point Foundation BIPOC Scholarship</li>
+            <li>🏆 Chinese Government Scholarship, Chongqing University of Posts and Telecommunications, China</li>
+            <li>🏆 European Erasmus Mundus Scholarship (meta4.0), EU – France, Italy, Slovenia, Germany, and Norway</li>
+            <li>🏆 Youth Leadership Award, UNESCO Global Citizenship Education Development (GCED)</li>
         </ul>
     </div>
 </section>
@@ -561,52 +561,28 @@
 .awards-list {
     list-style: none;
     padding: 0;
-    max-width: 900px;
-    margin: 40px auto 0;
+    max-width: 850px;
+    margin: 30px auto 0;
 }
 
 .awards-list li {
     font-size: 15px;
-    padding: 16px 0;
-    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+    color: #333;
+    line-height: 1.55;
     display: flex;
     align-items: flex-start;
-    gap: 18px;
-    color: #333;
-}
-
-.awards-list li:last-child {
-    border-bottom: none;
+    gap: 12px;
 }
 
 .award-icon {
-    font-size: 1.8rem;
-    flex-shrink: 0;
-    width: 30px;
-    margin-top: 2px;
+    /* Trophy acts only as bullet - no extra styling needed */
 }
 
+/* Very subtle hover for better UX */
 .awards-list li:hover {
-    background-color: #fdfaf0;
-    padding-left: 10px;
-    border-radius: 8px;
-}
-
-/* Optional subtle line on the left */
-.awards-list {
-    position: relative;
-}
-
-.awards-list::before {
-    content: '';
-    position: absolute;
-    left: 14px;
-    top: 10px;
-    bottom: 10px;
-    width: 3px;
-    background: linear-gradient(to bottom, #d4af37, #f4d98e);
-    opacity: 0.25;
-    border-radius: 3px;
+    color: #1f2937;
+    padding-left: 8px;
 }
 </style>
          
