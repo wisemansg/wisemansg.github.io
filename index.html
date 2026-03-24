@@ -535,7 +535,7 @@
 <!-- AWARDS SECTION -->
 <section id="awards" class="section">
     <div class="container">
-        <h2>Honours and Awards</h2>
+        <h2 class="awards-title">Honours & Awards</h2>
 
         <ul class="awards-list">
             <li>Best Student of the Year – Ordinary Level</li>
@@ -558,16 +558,90 @@
 </section>
 
 <style>
-.awards-list {
-    list-style-type: disc;
-    padding-left: 30px;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 20px;
+/* Import elegant Google Fonts (add this in your <head> section) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap');
+
+.awards-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+    position: relative;
 }
+
+.awards-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #c9a66b, #e8d5a3);
+    border-radius: 2px;
+}
+
+.awards-list {
+    list-style: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+}
+
 .awards-list li {
-    margin-bottom: 12px;
-    padding: 8px 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding: 22px 28px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    border-left: 6px solid #c9a66b;
+}
+
+.awards-list li::before {
+    content: "🏆";
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    opacity: 0.15;
+    transition: all 0.4s ease;
+}
+
+.awards-list li:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(201, 166, 107, 0.25);
+    border-left-color: #e8d5a3;
+}
+
+.awards-list li:hover::before {
+    opacity: 0.3;
+    transform: translateY(-50%) scale(1.2);
+}
+
+.section {
+    padding: 100px 20px;
+    background: #f8f5f0; /* Soft elegant background */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .awards-title {
+        font-size: 2.3rem;
+    }
+    .awards-list li {
+        padding: 18px 22px;
+        font-size: 1.05rem;
+    }
 }
 </style>
          
