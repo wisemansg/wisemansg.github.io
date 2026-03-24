@@ -537,117 +537,76 @@
     <div class="container">
         <h2>Honours & Awards</h2>
 
-        <div class="awards-grid">
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Best Student of the Year – Ordinary Level</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Best Student of the Year – Advanced Level</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Presbyterian Education Trust Bursary</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Beijing Government Scholarship</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Your Big Year Global Citizens Challenge Award</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Trustee International Scholarship, Wabash College, USA</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>National Academic Quiz Tournament and Quiz Master Award</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Zhejiang SDG Global Summer School Scholarship, China</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Shanghai Government Scholarship, Donghua University, China</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>UEA Postgraduate Sub-Saharan Africa Award, University of East Anglia, UK</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Global Youth Adaptation Summit Award</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Point Foundation BIPOC Scholarship</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Chinese Government Scholarship, Chongqing University of Posts and Telecommunications, China</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>European Erasmus Mundus Scholarship (meta4.0), EU – France, Italy, Slovenia, Germany, and Norway</p>
-            </div>
-            <div class="award-card">
-                <span class="award-icon">🏆</span>
-                <p>Youth Leadership Award, UNESCO Global Citizenship Education Development (GCED)</p>
-            </div>
-        </div>
+        <ul class="awards-list">
+            <li><span class="award-icon">🏆</span> Best Student of the Year – Ordinary Level</li>
+            <li><span class="award-icon">🏆</span> Best Student of the Year – Advanced Level</li>
+            <li><span class="award-icon">🏆</span> Presbyterian Education Trust Bursary</li>
+            <li><span class="award-icon">🏆</span> Beijing Government Scholarship</li>
+            <li><span class="award-icon">🏆</span> Your Big Year Global Citizens Challenge Award</li>
+            <li><span class="award-icon">🏆</span> Trustee International Scholarship, Wabash College, USA</li>
+            <li><span class="award-icon">🏆</span> National Academic Quiz Tournament and Quiz Master Award</li>
+            <li><span class="award-icon">🏆</span> Zhejiang SDG Global Summer School Scholarship, China</li>
+            <li><span class="award-icon">🏆</span> Shanghai Government Scholarship, Donghua University, China</li>
+            <li><span class="award-icon">🏆</span> UEA Postgraduate Sub-Saharan Africa Award, University of East Anglia, UK</li>
+            <li><span class="award-icon">🏆</span> Global Youth Adaptation Summit Award</li>
+            <li><span class="award-icon">🏆</span> Point Foundation BIPOC Scholarship</li>
+            <li><span class="award-icon">🏆</span> Chinese Government Scholarship, Chongqing University of Posts and Telecommunications, China</li>
+            <li><span class="award-icon">🏆</span> European Erasmus Mundus Scholarship (meta4.0), EU – France, Italy, Slovenia, Germany, and Norway</li>
+            <li><span class="award-icon">🏆</span> Youth Leadership Award, UNESCO Global Citizenship Education Development (GCED)</li>
+        </ul>
     </div>
 </section>
 
 <style>
-.awards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 18px;
-    max-width: 1000px;
+.awards-list {
+    list-style: none;
+    padding: 0;
+    max-width: 900px;
     margin: 40px auto 0;
 }
 
-.award-card {
-    background: white;
-    padding: 20px 24px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+.awards-list li {
+    font-size: 15px;
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e5e5;
     display: flex;
     align-items: flex-start;
     gap: 18px;
-    transition: all 0.3s ease;
-    border: 1px solid #e5e5e5;
-}
-
-.award-icon {
-    font-size: 1.9rem;
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-
-.award-card p {
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.5;
     color: #333;
 }
 
-.award-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    border-color: #d4af37;
+.awards-list li:last-child {
+    border-bottom: none;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .awards-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
+.award-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    width: 30px;
+    margin-top: 2px;
+}
+
+.awards-list li:hover {
+    background-color: #fdfaf0;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+/* Optional subtle line on the left */
+.awards-list {
+    position: relative;
+}
+
+.awards-list::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    background: linear-gradient(to bottom, #d4af37, #f4d98e);
+    opacity: 0.25;
+    border-radius: 3px;
 }
 </style>
          
