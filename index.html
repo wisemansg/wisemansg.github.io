@@ -513,10 +513,15 @@
                     <div class="project-buttons">
                         <a href="https://github.com/wisemansg/movierecommendationsystem" target="_blank" class="btn">Documentation</a>
                         <a href="https://colab.research.google.com/drive/1UCTVboPzxS5MA_NmNQ6XR_q1DdAsNkJP?usp=sharing" target="_blank" class="btn btn-secondary">View on Google Colab</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
-<!-- AWARDS SECTION - New ordered list with small trophy bullets -->
+
+<!-- AWARDS SECTION -->
 <section id="awards" class="section">
     <div class="container">
         <h2>Honours & Awards</h2>
@@ -539,7 +544,8 @@
         </ul>
     </div>
 </section>
-<!-- OVERALL SKILLS SECTION - Exact as you provided with visible borders -->
+
+<!-- OVERALL SKILLS SECTION -->
 <section id="overallskills" class="section">
     <div class="container">
         <h2>Overall Skillset</h2>
@@ -624,25 +630,35 @@
 </section>
 
 <style>
-    /* Awards - small trophy bullets */
+    /* Reduced spacing between sections */
+    section {
+        padding-top: 40px;
+        padding-bottom: 20px;   /* much smaller bottom padding */
+    }
+
+    section h2 {
+        margin-bottom: 15px;    /* small gap after heading */
+    }
+
+    /* Awards small trophy bullets */
     .awards-list {
         list-style: none;
         padding: 0;
         max-width: 850px;
-        margin: 30px auto 0;
+        margin: 20px auto 0;
     }
 
     .awards-list li {
         font-size: 15px;
-        padding: 10px 0;
+        padding: 8px 0;
         color: #333;
         line-height: 1.55;
         display: flex;
         align-items: flex-start;
-        gap: 12px;
+        gap: 10px;
     }
 
-    /* Skills table - visible borders exactly as you wanted */
+    /* Skills table - visible borders */
     .word-table {
         width: 100%;
         border-collapse: separate;
