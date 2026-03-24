@@ -535,7 +535,7 @@
 <!-- AWARDS SECTION -->
 <section id="awards" class="section">
     <div class="container">
-        <h2 class="section-title">Honours & Awards</h2>
+        <h2>Honours & Awards</h2>
 
         <div class="awards-grid">
             <div class="award-card">
@@ -603,81 +603,50 @@
 </section>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap');
-
-.section {
-    padding: 100px 20px;
-}
-
-.section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 30px;
-    color: #1f2937;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 2px;
-    background: linear-gradient(90deg, #d4af37, #f4d98e);
-    bottom: -10px;
-    left: 30%;
-    transform: translateX(-30%);
-    border-radius: 2px;
-}
-
 .awards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 15px;
-    max-width: 800px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 18px;
+    max-width: 1000px;
+    margin: 40px auto 0;
 }
 
 .award-card {
     background: white;
     padding: 20px 24px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     display: flex;
     align-items: flex-start;
-    gap: 20px;
-    transition: all 0.4s ease;
-    border: 1px solid #f0e6d2;
+    gap: 18px;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e5e5;
 }
 
 .award-icon {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     flex-shrink: 0;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
 .award-card p {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 1rem;
-    line-height: 1;
     margin: 0;
-    color: #374151;
-    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
 }
 
 .award-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.18);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
     border-color: #d4af37;
 }
 
-@media (max-width: 500px) {
+/* Responsive */
+@media (max-width: 600px) {
     .awards-grid {
         grid-template-columns: 1fr;
-    }
-    .section-title {
-        font-size: 1.8rem;
+        gap: 16px;
     }
 }
 </style>
