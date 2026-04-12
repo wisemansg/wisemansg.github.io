@@ -105,7 +105,7 @@
 
 <!-- EDUCATION + EXPERIENCE + LANGUAGES SECTION -->
 
-<!-- PREMIUM EDUCATION SECTION -->
+<!-- PREMIUM EDUCATION SECTION (BIG IMAGE HERO CARDS) -->
 
 <section id="education" class="section">
     <div class="container">
@@ -113,59 +113,81 @@
 
         <div class="education-grid">
 
-            <!-- ROW 1 (4 CARDS) -->
+            <!-- CARD 1 -->
             <div class="edu-card">
-                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/WORLDQUANT%20Pic.jpeg">
+                <div class="edu-logo">
+                    <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/WORLDQUANT%20Pic.jpeg">
+                </div>
                 <h3>WorldQuant University</h3>
                 <p class="degree">MSc Financial Engineering</p>
                 <p class="details">2025 – 2026 | USA</p>
             </div>
 
+            <!-- CARD 2 -->
             <div class="edu-card">
-                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/META4%20Pic.jpeg">
+                <div class="edu-logo">
+                    <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/META4%20Pic.jpeg">
+                </div>
                 <h3>Erasmus Mundus META4.0</h3>
                 <p class="degree">Manufacturing 4.0 (Joint Master)</p>
                 <p class="details">2023 – 2025 | Europe</p>
             </div>
 
+            <!-- CARD 3 -->
             <div class="edu-card">
-                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/NTNU%20Pic.jpeg">
+                <div class="edu-logo">
+                    <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/NTNU%20Pic.jpeg">
+                </div>
                 <h3>NTNU</h3>
                 <p class="degree">MSc Sustainable Manufacturing</p>
                 <p class="details">2023 – 2025 | Norway</p>
             </div>
 
+            <!-- CARD 4 -->
             <div class="edu-card">
-                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/POLITO%20Pic.jpeg">
+                <div class="edu-logo">
+                    <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/POLITO%20Pic.jpeg">
+                </div>
                 <h3>Politecnico di Torino</h3>
                 <p class="degree">MSc Materials Engineering</p>
                 <p class="details">2023 – 2025 | Italy</p>
             </div>
 
-            <!-- ROW 2 (4 CARDS) -->
+            <!-- CARD 5 -->
             <div class="edu-card">
-                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/ECL%20Pic.jpeg">
+                <div class="edu-logo">
+                    <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/ECL%20Pic.jpeg">
+                </div>
                 <h3>École Centrale de Lyon</h3>
                 <p class="degree">MSc Mechanical Engineering</p>
                 <p class="details">2023 – 2025 | France</p>
             </div>
 
+            <!-- CARD 6 -->
             <div class="edu-card">
-                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/SJTU%20Pic.jpeg">
+                <div class="edu-logo">
+                    <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/SJTU%20Pic.jpeg">
+                </div>
                 <h3>Shanghai Jiao Tong University</h3>
                 <p class="degree">Semiconductor Programme</p>
                 <p class="details">2024 | China</p>
             </div>
 
+            <!-- CARD 7 -->
             <div class="edu-card">
-                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/EILM%20Pic.jpeg">
+                <div class="edu-logo">
+                    <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/EILM%20Pic.jpeg">
+                </div>
                 <h3>EILM</h3>
                 <p class="degree">Mini-MBA</p>
                 <p class="details">2022 – 2023 | Ireland</p>
             </div>
 
+            <!-- CARD 8 -->
             <div class="edu-card">
-                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/NCEPU%20Pic.jpeg">
+                <div class="edu-logo">
+                    <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/NCEPU%20Pic.jpeg">
+                </div>
                 <h3>NCEPU</h3>
                 <p class="degree">BSc Mechanical Engineering</p>
                 <p class="details">2019 – 2023 | China</p>
@@ -177,7 +199,7 @@
 
 <style>
 
-/* 4 + 4 GRID FIX */
+/* GRID: 4 x 4 layout */
 .education-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -185,7 +207,7 @@
     margin-top: 30px;
 }
 
-/* RESPONSIVE FIX (MOBILE) */
+/* RESPONSIVE */
 @media (max-width: 1000px) {
     .education-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -194,55 +216,57 @@
 
 @media (max-width: 600px) {
     .education-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
-/* CARD DESIGN */
+/* CARD */
 .edu-card {
-    background: #ffffff;
-    padding: 25px 20px;
-    text-align: center;
-    border-radius: 12px;
+    background: #fff;
+    border-radius: 14px;
     border: 1px solid #e5e5e5;
-    transition: all 0.3s ease;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
 }
 
-/* HOVER */
 .edu-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
-/* LOGO */
-.edu-card img {
-    width: 65px;
-    height: 65px;
-    object-fit: contain;
-    margin-bottom: 15px;
+/* 🔥 BIG LOGO AREA */
+.edu-logo {
+    width: 100%;
+    height: 160px;   /* THIS MAKES LOGO BIG */
+    overflow: hidden;
+    background: #f5f5f5;
 }
 
-/* TEXT */
+.edu-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* fills box nicely */
+}
+
+/* TEXT SECTION */
 .edu-card h3 {
     font-size: 15px;
+    margin: 12px 10px 5px;
     font-weight: 700;
-    margin-bottom: 6px;
 }
 
 .edu-card .degree {
     font-size: 13px;
-    margin-bottom: 5px;
+    margin: 0 10px 5px;
 }
 
 .edu-card .details {
     font-size: 12px;
     color: gray;
+    margin-bottom: 15px;
 }
 
-/* TITLE */
-#education h2 {
-    text-align: center;
-}
 </style>
 
 <section id="experience" class="section">
