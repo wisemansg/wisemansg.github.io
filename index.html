@@ -105,7 +105,7 @@
 
 <!-- EDUCATION + EXPERIENCE + LANGUAGES SECTION -->
 
-<!-- EDUCATION SECTION (WORKING LOGOS + FALLBACK) -->
+<!-- PREMIUM EDUCATION SECTION -->
 
 <section id="education" class="section">
     <div class="container">
@@ -113,50 +113,59 @@
 
         <div class="education-grid">
 
+            <!-- ROW 1 (4 CARDS) -->
             <div class="edu-card">
-                <img src="https://logo.clearbit.com/wqu.edu" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135755.png'">
+                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/WORLDQUANT%20Pic.jpeg">
                 <h3>WorldQuant University</h3>
                 <p class="degree">MSc Financial Engineering</p>
                 <p class="details">2025 – 2026 | USA</p>
             </div>
 
             <div class="edu-card">
-                <img src="https://logo.clearbit.com/ntnu.no" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135755.png'">
+                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/META4%20Pic.jpeg">
+                <h3>Erasmus Mundus META4.0</h3>
+                <p class="degree">Manufacturing 4.0 (Joint Master)</p>
+                <p class="details">2023 – 2025 | Europe</p>
+            </div>
+
+            <div class="edu-card">
+                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/NTNU%20Pic.jpeg">
                 <h3>NTNU</h3>
                 <p class="degree">MSc Sustainable Manufacturing</p>
                 <p class="details">2023 – 2025 | Norway</p>
             </div>
 
             <div class="edu-card">
-                <img src="https://logo.clearbit.com/polito.it" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135755.png'">
+                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/POLITO%20Pic.jpeg">
                 <h3>Politecnico di Torino</h3>
                 <p class="degree">MSc Materials Engineering</p>
                 <p class="details">2023 – 2025 | Italy</p>
             </div>
 
+            <!-- ROW 2 (4 CARDS) -->
             <div class="edu-card">
-                <img src="https://logo.clearbit.com/centrale-lyon.fr" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135755.png'">
+                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/ECL%20Pic.jpeg">
                 <h3>École Centrale de Lyon</h3>
                 <p class="degree">MSc Mechanical Engineering</p>
                 <p class="details">2023 – 2025 | France</p>
             </div>
 
             <div class="edu-card">
-                <img src="https://logo.clearbit.com/sjtu.edu.cn" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135755.png'">
+                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/SJTU%20Pic.jpeg">
                 <h3>Shanghai Jiao Tong University</h3>
                 <p class="degree">Semiconductor Programme</p>
                 <p class="details">2024 | China</p>
             </div>
 
             <div class="edu-card">
-                <img src="https://logo.clearbit.com/eilm.ie" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135755.png'">
+                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/EILM%20Pic.jpeg">
                 <h3>EILM</h3>
                 <p class="degree">Mini-MBA</p>
                 <p class="details">2022 – 2023 | Ireland</p>
             </div>
 
             <div class="edu-card">
-                <img src="https://logo.clearbit.com/ncepu.edu.cn" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135755.png'">
+                <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/NCEPU%20Pic.jpeg">
                 <h3>NCEPU</h3>
                 <p class="degree">BSc Mechanical Engineering</p>
                 <p class="details">2019 – 2023 | China</p>
@@ -167,46 +176,72 @@
 </section>
 
 <style>
+
+/* 4 + 4 GRID FIX */
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin-top: 30px;
 }
 
+/* RESPONSIVE FIX (MOBILE) */
+@media (max-width: 1000px) {
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .education-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* CARD DESIGN */
 .edu-card {
-    background: #fff;
-    padding: 25px;
+    background: #ffffff;
+    padding: 25px 20px;
     text-align: center;
     border-radius: 12px;
     border: 1px solid #e5e5e5;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
+/* HOVER */
 .edu-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+/* LOGO */
 .edu-card img {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     object-fit: contain;
     margin-bottom: 15px;
 }
 
+/* TEXT */
 .edu-card h3 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
+    margin-bottom: 6px;
 }
 
-.degree {
-    font-size: 14px;
-}
-
-.details {
+.edu-card .degree {
     font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.edu-card .details {
+    font-size: 12px;
     color: gray;
+}
+
+/* TITLE */
+#education h2 {
+    text-align: center;
 }
 </style>
 
