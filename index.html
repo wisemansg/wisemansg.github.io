@@ -105,7 +105,7 @@
 
 <!-- EDUCATION + EXPERIENCE + LANGUAGES SECTION -->
 
-<!-- PREMIUM EDUCATION SECTION (FINAL VERSION WITH WORKING GITHUB IMAGES) -->
+<!-- PREMIUM EDUCATION SECTION (FULL FIXED VERSION) -->
 
 <section id="education" class="section">
     <div class="container">
@@ -167,6 +167,7 @@
                 <p class="details">2024 | China</p>
             </div>
 
+            <!-- UPDATED CARD (EILM FIXED) -->
             <div class="edu-card">
                 <div class="edu-logo">
                     <img src="https://raw.githubusercontent.com/wisemansg/wisemansg.github.io/main/assets/images/EILM%20Pic.jpeg">
@@ -191,7 +192,7 @@
 
 <style>
 
-/* GRID: 4 x 4 layout */
+/* GRID: 4 x 2 layout */
 .education-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -199,13 +200,14 @@
     margin-top: 30px;
 }
 
-/* RESPONSIVE */
+/* TABLET */
 @media (max-width: 1000px) {
     .education-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
+/* MOBILE */
 @media (max-width: 600px) {
     .education-grid {
         grid-template-columns: 1fr;
@@ -222,6 +224,7 @@
     text-align: center;
 }
 
+/* HOVER EFFECT */
 .edu-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.12);
@@ -259,6 +262,10 @@
     margin-bottom: 15px;
 }
 
+/* TITLE */
+#education h2 {
+    text-align: center;
+}
 </style>
 
 <section id="experience" class="section">
