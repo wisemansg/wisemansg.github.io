@@ -47,28 +47,73 @@
             }
         </style>
 
-        <div class="contact-icons">
-            <a href="https://www.linkedin.com/in/wiseman-siriro-40a834175/" target="_blank" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:wisemansirirog@gmail.com" title="Email">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="tel:+4793081060" title="Phone">
-                <i class="fas fa-phone"></i>
-            </a>
-            <a href="https://wa.me/4796733697" target="_blank" title="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://github.com/wisemansg/wisemansg" target="_blank" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="assets/WISEMAN SIRIRO (CV).pdf" download title="Download CV">
-                <i class="fas fa-file-arrow-down"></i>
-            </a>
-        </div>
-    </div>
-</header>
+        <!-- ===================== CONTACT ICONS (HORIZONTAL WITH LABELS) ===================== -->
+
+<style>
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* EACH ITEM */
+.contact-icons a {
+    display: flex;
+    align-items: center; /* THIS MAKES ICON + TEXT SIDE BY SIDE */
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* ICON */
+.contact-icons i {
+    font-size: 20px;
+}
+
+/* HOVER */
+.contact-icons a:hover {
+    transform: scale(1.1);
+    color: #0b2e6b; /* dark blue */
+}
+</style>
+
+<div class="contact-icons">
+
+    <a href="https://www.linkedin.com/in/wiseman-siriro-40a834175/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+    </a>
+
+    <a href="mailto:wisemansirirog@gmail.com">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+    </a>
+
+    <a href="tel:+4793081060">
+        <i class="fas fa-phone"></i>
+        <span>Phone</span>
+    </a>
+
+    <a href="https://wa.me/4796733697" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <a href="https://github.com/wisemansg/wisemansg" target="_blank">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+    </a>
+
+    <a href="assets/WISEMAN SIRIRO (CV).pdf" download>
+        <i class="fas fa-file-arrow-down"></i>
+        <span>Download CV</span>
+    </a>
+
+</div>
 
 <!-- NAVIGATION -->
 <nav>
